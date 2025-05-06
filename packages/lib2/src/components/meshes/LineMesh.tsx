@@ -12,8 +12,8 @@ const LineMesh = ({ width, height, radius, segments }: RoundedGeometryProps) => 
   const { size } = useThree()
 
   const { linewidth, color } = useControls('Line', {
-    linewidth: { value: 0.1, min: 0., max: 2, step: 0.1 },
-    color: '#00ff00',
+    linewidth: { value: 2, min: 0., max: 2, step: 0.1 },
+    color: '#000000',
   })
 
   useEffect(() => {

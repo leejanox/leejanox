@@ -4,10 +4,6 @@
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app1.tsbuildinfo",
     "outDir": "./dist",
-    "baseUrl": "./",
-    "paths": {
-      "@lib1/*":["../../packages/lib1/"]
-    }
   },
   "include": ["src","src/types"],
   "exclude": ["node_modules","dist", "build"]

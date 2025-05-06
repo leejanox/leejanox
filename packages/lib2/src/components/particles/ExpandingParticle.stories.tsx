@@ -35,7 +35,7 @@ export const Default: Story = {
   render: () => <ParticleStory/>
 };
 
-//Add leva
+//Add leva -> 흠..useMemo로 shaderMaterial 만들어놔서 그런지 연결 안됨
 const LevaParticleStory = () => {
   const {uAlpha,uDistortion} = useControls({
     uAlpha: { value: 0, min: 0, max: 1, step: 0.1 }, //alpha값

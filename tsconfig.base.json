@@ -8,7 +8,9 @@
     
         /* Bundler mode */
         "moduleResolution": "node",
-        "allowImportingTsExtensions": true,
+        "allowImportingTsExtensions": true,    
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true, 
         "isolatedModules": true,
         "moduleDetection": "force",
         "noEmit": true,
@@ -20,5 +22,6 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
+        "baseUrl": ".",
     },
 }

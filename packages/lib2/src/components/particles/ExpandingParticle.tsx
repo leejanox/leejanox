@@ -1,5 +1,5 @@
-import vt from '../shaders/vertices/ExpandingParticle.glsl?raw'
-import fg from '../shaders/fragments/ExpandingParticle.glsl?raw'
+import vt from './ExpandingParticleVertex.glsl?raw'
+import fg from './ExpandingParticleFrag.glsl?raw'
 import { useRef} from 'react'
 import { forwardRef , useImperativeHandle } from 'react'
 import { useMemo } from "react"
@@ -55,7 +55,7 @@ const ExpandingParticle = forwardRef<THREE.Group,ExpandingParticleProps>(
             blending: THREE.NormalBlending,
             //blending: THREE.AdditiveBlending, //혼합모드 -> 키면 개 별로임; bloom이 나음
             toneMapped: false, //THREE가 자동으로 톤 매핑하는것 방지
-        }),[texture]);
+        }),[texture,JSON.stringify(levaUniforms)]); 
 
         useFrame((state)=>{
             const time = state.clock.getElapsedTime();
