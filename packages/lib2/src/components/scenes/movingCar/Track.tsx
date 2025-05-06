@@ -23,8 +23,8 @@ const Track = ({points,trackColor}:TrackProps) => {
   const matConfig = {
     mirror:1.,
     color: '#fff',
-    roughness: .2,
-    metalness: .85,
+    roughness: .1,
+    metalness: .95,
     side: THREE.DoubleSide,
     //나머지 설정들은 별로 상관 없을듯
   }

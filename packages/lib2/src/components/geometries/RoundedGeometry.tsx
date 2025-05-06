@@ -7,9 +7,9 @@ export type RoundedGeometryProps = {
   segments?: number;
 }
 
-export const RoundedShape = ({width,height,radius,segments}:RoundedGeometryProps) => {
-  if ( !width || !height || !radius || !segments) {
-    width = 1; height = 1; radius = 0.2; segments = 12;
+export const RoundedShape = ({width,height,radius}:RoundedGeometryProps) => {
+  if ( !width || !height || !radius ) {
+    width = 1; height = 1; radius = 0.2;
   }
 
   const shape = new THREE.Shape();
