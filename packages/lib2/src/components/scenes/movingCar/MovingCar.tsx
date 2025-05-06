@@ -1,3 +1,4 @@
+//! 스토리북으로 확인한거랑 다름 -> 차 마지막 위치랑, 카메라 포지션 설정 다시 해야함
 import React, { useRef } from 'react'
 import * as THREE from 'three'
 import Car from './Car'
