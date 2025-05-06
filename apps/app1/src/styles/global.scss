@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root,html,body{
+    width: 100vw;
+    height: 100%;
+    overflow: auto;
+}
+
+//폰트설정
+body{
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+:root {
+    --my-bg:#21282a;
+    --my-color:#f3f3f3;
+
+    --my-primary:#FFEBCD;
+    --my-secondary:#BC8F8F;
+    --my-teritory:#e3e3db;
+
+    --my-black:#15161b;
+    --my-white:#FFFFF0;
+
+    --primary:#262626;
+    --secondary:#171717;
+    --teritory:#404040;
+
+    --accent-primary:#2563eb;
+    --accent-primary-state:#1d4ed8;
+    --accent-secondary:#f97316;
+    --accent-secondary-state:#ea580c;
+    --accent-teritory:#fbbf24;
+    --accent-teritory-state:#f59e0b;
+
+    --font-cute:'Cuty';
+    --font-cookieB:'CookieB';
+    --font-cookieR:'CookieR';
+    --font-dgmo:'DGMO';
+}
+
+//font face
+@font-face {
+    font-family: 'Cuty';
+    src: url('../styles/fonts/cute.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieB';
+    src: url('../styles/fonts/CookieRun_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieR';
+    src: url('../styles/fonts/CookieRun_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DGMO';
+    src: url('../styles/fonts/DungGeunMo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fill-width {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

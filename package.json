@@ -1,0 +1,50 @@
+{
+  "name": "@janox/root",
+  "packageManager": "yarn@4.9.1",
+  "private": true,
+  "description": "Root package for Janox monorepo",
+  "license": "MIT",
+  "author": {
+    "name": "goeun.kim",
+    "email": "rhdms6748@gmail.com"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test:a1": "yarn workspace @janox/app1 test",
+    "test:ex": "yarn workspace @janox/ex test",
+    "test:l1": "yarn workspace @janox/lib1 test",
+    "dev:a1": "yarn workspace @janox/app1 dev",
+    "dev:ex": "yarn workspace @janox/ex dev",
+    "lint:a1": "yarn workspace @janox/app1 lint",
+    "lint:l1": "yarn workspace @janox/lib1 lint",
+    "lint:l2": "yarn workspace @janox/lib2 lint",
+    "storybook:l1": "yarn workspace @janox/lib1 storybook",
+    "storybook:l2": "yarn workspace @janox/lib2 storybook"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-router-dom": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "sass-embedded": "^1.87.0",
+    "scss": "^0.2.4",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
+  }
+}

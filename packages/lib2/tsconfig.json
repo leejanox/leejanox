@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+      "jsx": "react-jsx",
+      "composite": true,
+      "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.lib2.tsbuildinfo",
+      "outDir": "./dist",
+      "baseUrl": "./src",
+      "typeRoots": [
+        "./node_modules/@types",
+        "./src/types"
+      ],
+    },
+    "include": ["src"]
+  }
+  

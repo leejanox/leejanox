@@ -1,0 +1,33 @@
+{
+  "name": "@janox/app1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo @janox/app1 test \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@janox/lib1": "workspace:^",
+    "@janox/lib2": "workspace:^",
+    "@pmndrs/branding": "^0.0.8",
+    "@react-three/drei": "^10.0.7",
+    "@react-three/fiber": "^9.1.2",
+    "@react-three/postprocessing": "^3.0.4",
+    "leva": "^0.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.3",
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0",
+    "vite": "^6.3.4",
+    "vite-plugin-glsl": "^1.4.1"
+  }
+}

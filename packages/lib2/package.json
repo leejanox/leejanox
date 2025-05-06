@@ -1,0 +1,49 @@
+{
+    "name": "@janox/lib2",
+    "version": "0.0.1",
+    "description": "threejs",
+    "main": "src/index.ts",
+    "exports": {
+        ".": {
+            "import": "./src/index.ts"
+        }
+    },
+    "dependencies": {
+        "@react-three/drei": "^10.0.7",
+        "@react-three/fiber": "^9.1.2",
+        "@react-three/postprocessing": "^3.0.4",
+        "glsl": "^0.0.1",
+        "leva": "^0.10.0",
+        "postprocessing": "^6.37.3",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-router-dom": "^7.5.3",
+        "three": "^0.176.0",
+        "three-stdlib": "^2.36.0"
+    },
+    "devDependencies": {
+        "@chromatic-com/storybook": "3",
+        "@storybook/addon-essentials": "8.6.12",
+        "@storybook/addon-onboarding": "8.6.12",
+        "@storybook/blocks": "8.6.12",
+        "@storybook/experimental-addon-test": "8.6.12",
+        "@storybook/react": "8.6.12",
+        "@storybook/react-vite": "^8.6.12",
+        "@storybook/test": "8.6.12",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.0.4",
+        "@types/three": "^0.176.0",
+        "@vitest/browser": "^3.1.2",
+        "@vitest/coverage-v8": "^3.1.2",
+        "playwright": "^1.52.0",
+        "storybook": "^8.6.12",
+        "typescript": "^5.8.3",
+        "vite": "^6.3.4",
+        "vite-plugin-glsl": "^1.4.1",
+        "vitest": "^3.1.2"
+    },
+    "scripts": {
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    }
+}

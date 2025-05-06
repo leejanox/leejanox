@@ -1,0 +1,18 @@
+//@ts-nocheck
+
+//mesh
+const geom = new THREE.PlaneGeometry(100,100);
+const mat = new THREE.ShaderMaterial({
+    uniforms:{
+
+    },
+    vertexShader: vt,
+    fragmentShader: fg,
+    side: THREE.DoubleSide, //양면으로 보이게
+    // transparent: true, //반투명, glow,alpha discard 등 shader 투명 연산 제대로 하기 위해 설정
+});
+
+<mesh>
+    <primitive object={dummy.geometry} attach="geometry" />
+    <primitive object={dummy.material} attach="material" />
+</mesh>
