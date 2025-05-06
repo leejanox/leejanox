@@ -6,11 +6,12 @@ import Main from './pages/Main'
 import LoginPage from './pages/LoginPage'
 import Demo1 from './pages/Demo1'
 import Demo2 from './pages/Demo2'
+import Demo3 from './pages/Demo3'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <Demo2/>
+    <Demo3/>
     </BrowserRouter>
   </StrictMode>
 )
